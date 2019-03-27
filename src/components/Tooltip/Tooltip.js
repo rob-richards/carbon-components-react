@@ -414,6 +414,12 @@ class Tooltip extends Component {
     // eslint-disable-next-line no-console
     console.log('clickToOpen :', clickToOpen);
 
+    // eslint-disable-next-line no-console
+    console.log('__DEV__ :', __DEV__);
+
+    // eslint-disable-next-line no-console
+    console.log('!clickToOpen && __DEV__ :', !clickToOpen && __DEV__);
+
     if (!clickToOpen && __DEV__) {
       warning(
         didWarnAboutDeprecationClickToOpen,
